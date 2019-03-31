@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./node_modules/bulma/css/bulma.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>EndGame</title>
+</head>
+<body onload="gameOver()" class="bg">
+    <div class="container" style="border: 3px solid white; padding: 3% ;height: 95%">
+        <div class="row">
+            <div class="column">
+                <center> <label style="color:black;font-family: 'Baloo';font-size: 60px;">SCORE : </label>
+                </center>
+                <center> <label style="color:black;font-family: 'Baloo';font-size: 100px;" id="showTotalScore"></label>
+                </center>
+            </div>
+        </div>
+        <div class="row">
+            <center><label style="color:black;font-family: 'Baloo';font-size: 130px;" id="showWord">Wow!!!</label>
+            </center>
+        </div>
+        <div class="row" style="margin-top:2%;">
+            <div class="columns">
+                <div class="column" style="text-align:right;">
+                    <a href="runMath.html">
+                        <button class="button is-info is-rounded"
+                            style="width:50%; height: 80px;font-family: 'Baloo'; font-size: 40px;"
+                            onclick="clear()">Again!</button>
+                    </a>
+                </div>
+                <div class="column" style="text-align:left;">
+                    <a href="game.html">
+                        <button class="button is-info is-rounded"
+                            style="width:50%; height: 80px;font-family: 'Baloo'; font-size: 40px;"
+                            onclick="clear()">Home</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
